@@ -1,4 +1,4 @@
-package br.com.pets.pets.model;
+package org.backend_pets.safe_pets.model;
 
 import lombok.AllArgsConstructor;
 
