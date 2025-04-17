@@ -1,19 +1,22 @@
-package org.backend_pets.safe_pets.model;
+package org.backend_pets.safe_pets.model.request;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lombok.*;
-import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.backend_pets.safe_pets.model.Porte;
 
 import java.time.LocalDateTime;
 import java.util.Date;
 
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
-@Getter
-public class Animal {
-    @Id
+public class AtualizarAnimalRequest {
+
     private String id;
     private String nome;
     @NotBlank(message = "Especie deve ser informada")
@@ -25,5 +28,4 @@ public class Animal {
     private Date dataNascimento;
     private Boolean castrado;
     private LocalDateTime cadastradoEm;
-
 }
